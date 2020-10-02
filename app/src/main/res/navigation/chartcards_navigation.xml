@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/home_view_pager_fragment">
+
+    <fragment
+        android:id="@+id/home_view_pager_fragment"
+        android:name="com.example.fiorichartcardsapp.HomeViewPagerFragment"
+        tools:layout="@layout/fragment_home_view_pager">
+
+       <action
+            android:id="@+id/action_view_pager_fragment_to_card_detail_fragment"
+            app:destination="@id/card_details_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/card_details_fragment"
+        android:name="com.example.fiorichartcardsapp.CardDetailsFragment"
+        android:label="@string/card_details_title"
+        tools:layout="@layout/fragment_card_details">
+        <argument
+            android:name="chartViewData"
+            app:argType="com.example.fiorichartcardsapp.domain.DetailChartData"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_dest"
+        android:name="com.example.fiorichartcardsapp.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.example.fiorichartcardsapp.SettingsActivity"
+        android:label="SettingsActivity" />
+</navigation>

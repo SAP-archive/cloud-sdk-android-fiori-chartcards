@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="chartCardsViewModel"
+            type="com.example.fiorichartcardsapp.viewmodels.FioriChartCardsViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:onRefreshListener="@{chartCardsViewModel::onRefresh}"
+            app:refreshing="@{chartCardsViewModel.dataLoading}">
+            <com.sap.cloud.mobile.fiori.chartcard.ChartCardView
+                android:id="@+id/chartCardViewScrollable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutStyle="scrollableCard"
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

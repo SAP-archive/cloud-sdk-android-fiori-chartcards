@@ -1,0 +1,2 @@
+rootProject.name='Fiori Chart Cards Sample App'
+include ':app'

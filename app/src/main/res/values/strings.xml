@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">US COVID-19 Tracking</string>
+
+    <string name="card_details_title">Card Details</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="base_cards_title">US Daily</string>
+    <string name="scrollable_cards_title">States Current</string>
+    <string name="refresh">Refresh</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="useLiveData"
+            android:title="Live API Calls"
+            android:summaryOn="Send HTTP requests to retrieve realtime data from the APIs"
+            android:summaryOff="Use offline data stored in assets on device"/>
+
+    </PreferenceScreen>
