@@ -60,3 +60,9 @@ Currently this project is only being updated and maintained by SAP employees.
 ## License
 
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, v. 2 except as noted otherwise in the [License](LICENSES/Apache-2.0.txt) file.
+
+### Attribution
+
+The [COVID Tracking APIs](https://covidtracking.com/data/api) used in this project is taken from [The COVID Tracking Project](https://covidtracking.com/about) which is "a volunteer organization launched from The Atlantic and dedicated to collecting and publishing the data required to understand the COVID-19 outbreak in the United States."
+
+The COVID Tracking Project at The Atlantic’s data and website content is published under a [Creative Commons CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) license. The data APIs are used in this project without any modifications.
