@@ -1,5 +1,7 @@
 # SAP Fiori Chart Cards Demo Application
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-sdk-android-fiori-chartcards)](https://api.reuse.software/info/github.com/SAP-samples/cloud-sdk-android-fiori-chartcards)
+
 ## Description
 
 This application demonstrates how to utilize the Chart Cards views in the SAP Fiori UI library. The app is intended to provide an example implementation of these controls with a real network API data source, i.e. the [COVID Tracking APIs](https://covidtracking.com/data/api), so that users can understand how to use the SAP Fiori Chart Cards views to expand the functionality of their own applications.
